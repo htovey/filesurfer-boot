@@ -44,7 +44,7 @@ public class CoreController {
 		
 		for (Note note : noteListFromDb) {
 			Map<String, String> noteMap = new HashMap<String, String>();
-			noteMap.put("noteId", String.valueOf(note.getNoteId()));
+			noteMap.put("id", String.valueOf(note.getNoteId()));
 			noteMap.put("directory", note.getDirectory());
 			noteMap.put("noteText", note.getNoteText());
 			noteMap.put("lastUpdated", note.getSaveDate().toString());
